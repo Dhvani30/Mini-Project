@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pawthos - How It Works</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4496e9",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                        "text-light": "#111921",
+                        "text-dark": "#f6f7f8",
+                        "secondary-light": "#4e7397",
+                        "secondary-dark": "#a0b1c2",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- Updated Header to match Home Page -->
+        <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-slate-200 px-10 py-4 sticky top-0 bg-slate-50/80 backdrop-blur-lg z-20">
+            <div class="flex items-center gap-3 text-slate-800">
+                <span class="material-symbols-outlined text-3xl text-[#4496e9]">pets</span>
+                <h2 class="text-slate-900 text-xl font-bold tracking-tight">Pawthos</h2>
+            </div>
+            <div class="flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-6">
+                    <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                        href="home_page.html">Home</a>
+                    <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                        href="services.html">Services</a>
+                    <a class="text-slate-700 text-sm font-medium text-[#4496e9]" 
+                        href="how-it-works.html">How It Works</a>
+                    <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                        href="success-stories.html">Success Stories</a>
+                    <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                        href="contact.html">Contact</a>
+                </nav>
+                <button
+                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#4496e9] text-slate-50 text-sm font-bold shadow-sm hover:bg-[#3b82f6] transition-all duration-300">
+                    <span class="truncate">Get Help Now</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex flex-1 flex-col">
+            <section class="w-full px-4 py-16 sm:px-6 md:py-24 lg:px-8 xl:py-32">
+                <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
+                    <div class="flex flex-col items-start gap-6">
+                        <h1 class="text-4xl font-black tracking-tighter sm:text-5xl md:text-6xl">How We Help Animals
+                            Walk Again</h1>
+                        <p class="max-w-xl text-base text-secondary-light dark:text-secondary-dark sm:text-lg">Our
+                            process is designed to be gentle, stress-free, and focused on your pet's comfort and
+                            mobility. We're here to support you every step of the way.</p>
+                        <button
+                            class="rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">Start
+                            Your Pet's Journey</button>
+                    </div>
+                    <div class="aspect-video w-full overflow-hidden rounded-xl">
+                        <img alt="Vet with a happy dog wearing a prosthetic leg" class="h-full w-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Wa_rDhEKMXynVLZs-raWirPwKqWHbzILyKTBP2hyP0EnH7NjJ0E7WqHaLPq63jB0rNd-zf32KK9Nh_G5nK8hlyE4-b-hCBrpRAEh_53p2rnmKEZk0Xgix6m0a8oDnV90Ti54pwQIr6fUD6IpamGPXtE6R7ndPT9_cJjEjCJlLsq9GXdmwfsDjTDryWM5HT8UVzZZXS7tUDjR4sFOjqUveCidYEwEVAyJhfxNy8H3Qto9keb0woB7wh1FcPDR6htyNXlSYysleZ0" />
+                    </div>
+                </div>
+            </section>
+            <section class="w-full bg-primary/5 px-4 py-16 dark:bg-primary/10 sm:px-6 md:py-24 lg:px-8">
+                <div class="mx-auto max-w-5xl">
+                    <div class="mb-12 text-center">
+                        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Our Simple, Stress-Free Process</h2>
+                    </div>
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:gap-y-16">
+                        <div class="flex items-start gap-6">
+                            <div
+                                class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                                <span class="material-symbols-outlined text-3xl">qr_code_scanner</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Step 1: Gentle 3D Scan</h3>
+                                <p class="mt-2 text-base text-secondary-light dark:text-secondary-dark">We start with a
+                                    gentle, non-invasive 3D scan of your pet's limb. This ensures a perfect fit and
+                                    maximum comfort, creating a precise digital model for their custom prosthetic.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div
+                                class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                                <span class="material-symbols-outlined text-3xl">design_services</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Step 2: Custom Digital Design</h3>
+                                <p class="mt-2 text-base text-secondary-light dark:text-secondary-dark">Our expert
+                                    designers use advanced software to craft a custom prosthetic that matches your pet's
+                                    anatomy, focusing on functionality and natural movement.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div
+                                class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                                <span class="material-symbols-outlined text-3xl">print</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Step 3: 3D Print with Care</h3>
+                                <p class="mt-2 text-base text-secondary-light dark:text-secondary-dark">Using
+                                    state-of-the-art 3D printing and biocompatible materials, we create a durable,
+                                    lightweight prosthetic that's safe, strong, and comfortable for your pet.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div
+                                class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                                <span class="material-symbols-outlined text-3xl">favorite</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Step 4: Perfect Fit + Lifetime Support</h3>
+                                <p class="mt-2 text-base text-secondary-light dark:text-secondary-dark">We ensure a
+                                    perfect fit and provide ongoing support to help your pet adapt and thrive. We're
+                                    with you for life to address any questions or concerns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+                <div class="mx-auto max-w-5xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">See the Magic in Motion</h2>
+                    <p
+                        class="mx-auto mt-4 max-w-2xl text-base text-secondary-light dark:text-secondary-dark sm:text-lg">
+                        Watch how our prosthetics transform the lives of animals, restoring their mobility and joy.</p>
+                    <div class="relative mx-auto mt-8 aspect-video max-w-4xl overflow-hidden rounded-xl shadow-lg">
+                        <img alt="Video thumbnail of a dog playing with a prosthetic" class="h-full w-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoEl3foVNMv7dl4m3Wtx-Y73QcwUzH9BiNbvGLwIPFz60nhXUPdCJujFsB41zfSBNpqnV_6B3ZbMprNCEV0AROvQ7kHhFm0S5ki84ak9hi1pChkiAptPTtE9igvtG8iNECXnkukYyyJ0frQtcxDctjUD_zM06h4otydZqPpJuWHEok_jtBSQBNNpp6X5LNuRpQJQ7rPKG0hjUR_qzxsOY-xWgwv56BWStCJ6N84TlWzbw5rkIihMKdr6VP4wR87Z3N_8yEEoOH6NE" />
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                            <button
+                                class="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-transform hover:scale-110">
+                                <span class="material-symbols-outlined text-4xl"
+                                    style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full bg-primary/10 px-4 py-16 dark:bg-primary/20 sm:px-6 md:py-24 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-black tracking-tight sm:text-4xl">Your Pet's Journey Starts With a
+                        Conversation</h2>
+                    <p class="mx-auto mt-4 max-w-xl text-base text-secondary-light dark:text-secondary-dark sm:text-lg">
+                        Contact our team today to discuss your pet's needs and how we can help them walk again.</p>
+                    <div class="mt-8 flex justify-center">
+                        <button
+                            class="rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">Talk
+                            to Our Team</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="w-full border-t border-primary/20 bg-background-light dark:bg-background-dark">
+            <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-start">
+                        <nav class="hidden md:flex items-center gap-6">
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="home_page.html">Home</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="services.html">Services</a>
+                        <a class="text-slate-700 text-sm font-medium text-[#4496e9]" href="how-it-works.html">How It
+                            Works</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="success-stories.html">Success Stories</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    </div>
+                    <p class="text-sm text-secondary-light dark:text-secondary-dark">© 2023 Pawthos. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
