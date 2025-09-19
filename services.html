@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pawthos - Services</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lato:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A90E2",
+                        "background": {
+                            "light": "#F8F9FC",
+                            "DEFAULT": "#FFFFFF"
+                        },
+                        "text": {
+                            "DEFAULT": "#444444",
+                            "dark": "#121212"
+                        }
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "12px",
+                        "lg": "16px",
+                    },
+                    spacing: {
+                        "15": "60px",
+                        "30": "120px",
+                        "12": "48px",
+                        "2": "8px"
+                    },
+                    boxShadow: {
+                        'subtle': '0 4px 12px rgba(0, 0, 0, 0.05)',
+                    },
+                    fontSize: {
+                        '4xl': '32px',
+                        '5xl': '48pt',
+                        '3xl': '28pt',
+                        '2xl': '24pt',
+                        'xl': '18pt',
+                        'lg': '16pt'
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background dark:bg-background-light font-display text-text">
+    <div class="bg-background-light dark:bg-background-light">
+        <header class="fixed top-0 left-0 right-0 z-50 h-20 bg-background dark:bg-background shadow-subtle">
+            <div class="container mx-auto px-10 flex items-center justify-between h-full">
+                <a class="text-text-dark dark:text-text-dark text-2xl font-semibold" href="#">Pawthos</a>
+                <nav class="hidden md:flex items-center gap-6">
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="home_page.html">Home</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="services.html">Services</a>
+                        <a class="text-slate-700 text-sm font-medium text-[#4496e9]" href="how-it-works.html">How It
+                            Works</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="success-stories.html">Success Stories</a>
+                        <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                <a class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                    href="#">Get Help Now</a>
+            </div>
+        </header>
+        <main class="pt-20">
+            <section
+                class="bg-gradient-to-b from-background to-background-light dark:from-background dark:to-background-light py-30">
+                <div class="container mx-auto px-10 grid grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-6 items-start">
+                        <h1 class="text-5xl font-semibold text-text-dark dark:text-text-dark">Our Services</h1>
+                        <p class="text-xl text-text dark:text-text max-w-md">Tailored solutions for every animal’s
+                            unique needs, ensuring comfort, mobility, and a renewed zest for life.</p>
+                        <a class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            Get a Free Consultation
+                        </a>
+                    </div>
+                    <div class="flex justify-end">
+                        <img alt="Dog with a prosthetic leg"
+                            class="w-[600px] h-[500px] object-cover rounded-lg shadow-subtle ml-15"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeKXnn0J0JsNHFJIqyBd9HkGkSLF3YDHpTwBv4_-ZqXMUr3_qAFNCp_dAxeTcp7ZU_z4UskQFiQgse-vQFg2T2vXNYJQpxG6YVL5FYK_M_XSSuilQnVwB9oRKJnDQQIIM3GsmhC4tDpuQrj6b4dLTEMtvWvqdKmDtK9dQgFX47LsVRu5C9GvLojvNAV07gzTVMjgSdW4n9PIm0ylw9ym9Is1jOxX-Z592K-SHa6FI92NdomW-E17GrkmBBuIhUVp8HpAVGEIZrkJY" />
+                    </div>
+                </div>
+            </section>
+            <section class="py-30">
+                <div class="container mx-auto px-10 text-center">
+                    <h2 class="text-4xl font-semibold text-text-dark dark:text-text-dark mb-12">What We Offer</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Custom
+                                Prosthetics</h3>
+                            <p class="text-xl text-text dark:text-text mb-4">High-quality, custom-fitted prosthetic
+                                limbs.</p>
+                            <p class="text-2xl font-bold text-primary mb-6">₹20,000</p>
+                            <a class="font-semibold text-primary hover:underline" href="#">Learn More</a>
+                        </div>
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Rehab Sessions
+                            </h3>
+                            <p class="text-xl text-text dark:text-text mb-4">Post-fitting therapy to ensure optimal
+                                adaptation.</p>
+                            <p class="text-2xl font-bold text-primary mb-6">₹15,000</p>
+                            <a class="font-semibold text-primary hover:underline" href="#">Learn More</a>
+                        </div>
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Accessories</h3>
+                            <p class="text-xl text-text dark:text-text mb-4">Harnesses, liners, and other essential
+                                gear.</p>
+                            <p class="text-2xl font-bold text-primary mb-6">₹1,500</p>
+                            <a class="font-semibold text-primary hover:underline" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-background-light dark:bg-background-light py-30">
+                <div class="container mx-auto px-10 text-center">
+                    <h2 class="text-4xl font-semibold text-text-dark dark:text-text-dark mb-12">Why Choose Us</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Comfort First
+                            </h3>
+                            <p class="text-xl text-text dark:text-text">We prioritize your pet's comfort above all,
+                                using soft, durable materials for a perfect fit.</p>
+                        </div>
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Expert
+                                Collaboration</h3>
+                            <p class="text-xl text-text dark:text-text">Our team works closely with veterinarians and
+                                specialists to create the best possible outcomes.</p>
+                        </div>
+                        <div
+                            class="bg-background dark:bg-background rounded-lg shadow-subtle p-8 flex flex-col items-center text-center">
+                            <h3 class="text-2xl font-semibold text-text-dark dark:text-text-dark mb-3">Full Support</h3>
+                            <p class="text-xl text-text dark:text-text">From initial consultation to lifelong
+                                adjustments, we provide continuous, compassionate support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-[#F0F7FF] dark:bg-primary/10 py-20">
+                <div class="container mx-auto px-10 text-center">
+                    <h3 class="text-3xl font-semibold text-text-dark dark:text-text-dark">Every Month, We Help Over 45
+                        Animals</h3>
+                    <p class="text-xl text-text dark:text-text mt-2">10+ prosthetics • 20+ sessions • 15+ accessories
+                    </p>
+                </div>
+            </section>
+            <section class="bg-[#F0F7FF] dark:bg-primary/10 py-30">
+                <div class="container mx-auto px-10 text-center flex flex-col items-center">
+                    <h2 class="text-4xl font-semibold text-text-dark dark:text-text-dark max-w-2xl">Ready to Restore
+                        Your Pet’s Mobility?</h2>
+                    <p class="text-xl text-text dark:text-text mt-4 mb-8 max-w-xl">Book a free 30-minute consultation
+                        with our specialists to discuss your pet's needs and explore the best solutions.</p>
+                    <a class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                        href="#">Schedule Your Consultation</a>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-slate-100 border-t border-slate-200">
+                <div class="max-w-7xl mx-auto py-12 px-4 md:px-10">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                        <div class="flex items-center gap-3 text-slate-800">
+                            <span class="material-symbols-outlined text-3xl text-[#4496e9]">pets</span>
+                            <h2 class="text-slate-900 text-xl font-bold tracking-tight">
+                                Pawthos
+                            </h2>
+                        </div>
+                        <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                            <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                                href="home_page.html">Home</a>
+                            <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                                href="services.html">Services</a>
+                            <a class="text-slate-700 text-sm font-medium text-[#4496e9]" href="how-it-works.html">How It
+                                Works</a>
+                            <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                                href="success-stories.html">Success Stories</a>
+                            <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
+                                href="contact.html">Contact</a>
+                        </nav>
+                        <div class="flex justify-center gap-4">
+                            <a class="text-slate-500 hover:text-[#4496e9] transition-colors" href="#"><span
+                                    class="material-symbols-outlined">alternate_email</span></a>
+                            <a class="text-slate-500 hover:text-[#4496e9] transition-colors" href="#"><span
+                                    class="material-symbols-outlined">photo_camera</span></a>
+                            <a class="text-slate-500 hover:text-[#4496e9] transition-colors" href="#"><span
+                                    class="material-symbols-outlined">videocam</span></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-sm text-center mt-8 pt-8 border-t border-slate-200">
+                        © 2024 Pawthos. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+    </div>
+
+</body>
+
+</html>
