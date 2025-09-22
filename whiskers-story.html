@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pawthos - Whiskers' Story</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec7f13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                        "text-light": "#1a1510",
+                        "text-dark": "#f8f7f6",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2e2318",
+                        "border-light": "#e6e0db",
+                        "border-dark": "#3f3326"
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .timeline-item:not(:last-child) .timeline-connector {
+            display: block;
+        }
+
+        .timeline-item:last-child .timeline-connector {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative min-h-screen w-full">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-6 md:px-10 py-3">
+            <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"
+                        fill="currentColor"></path>
+                    <path clip-rule="evenodd"
+                        d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+                <h2 class="text-xl font-bold">Pawthos</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Our Impact</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Stories</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Feline Prosthetics</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Get Involved</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button
+                    class="px-4 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors">Donate</button>
+                <button
+                    class="px-4 py-2 text-sm font-bold bg-background-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">Contact
+                    Us</button>
+            </div>
+        </header>
+        <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <div class="flex flex-col gap-12 sm:gap-16">
+                <div class="relative rounded-xl overflow-hidden min-h-[480px] flex flex-col items-start justify-end p-8 md:p-12 bg-cover bg-center text-white"
+                    style='background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpZ7c0vvcR3M8ry0IQVPTKyk9GW9CiTY-DqbaYcoLpFlfpbHXzF1fWIQ9cp79LNZsoxxRsRMwucc9EJmyG1zWN3EF2kmD7akcn_laJWi00TB_wmAVCcHXsuezwQjdSXO6IH6g2ST_92QVq7BooUaa5m8bgKeiazYyRy-lSmgymcYbNsXKRMDN9LxKhUaNenI_rcmT-ZluWkA_GDmIfPBTEZsQ7DA_4ZlcK44nuA6wKxQrhi99CsUalESXmIgCWMgGlM7BvAt3EX8s");'>
+                    <div class="flex flex-col gap-4 max-w-xl">
+                        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Whiskers' Journey to Mobility
+                        </h1>
+                        <p class="text-base md:text-lg text-white/90">From rescue to recovery, witness Whiskers'
+                            inspiring transformation with a custom feline prosthetic.</p>
+                    </div>
+                    <button
+                        class="mt-6 px-5 py-3 text-base font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors">Support
+                        More Stories</button>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+                    <div class="md:col-span-2 md:row-span-2 rounded-lg overflow-hidden">
+                        <img alt="Whiskers after receiving her prosthetic" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUw0ypHoMlKwt3_UP02ORsqb5Px2Pu0JLgte8pfTw7EWUHKvEfCmwZW73hRwZcw3S2rQ01ZgUOts49x9ri4YhX7cB06Lzmky2Zzozi07X4wMreQduu9cyrtSlZ2gbbaa6y7SgR0hPrK2HI7-4jjFKWR_xcXTl-jKBBOod0ojphiUXxVZZblQa5p-bkh5UR0eICWbZNmO7C_vwbMZr6DO9bmEHxGkb7rrWDVqvho2nvBWVEpEjFVSwBFJ2KeqQBrNvsesDm_0lo3rE" />
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                        <img alt="Whiskers before her prosthetic" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9mQ1rFkiRWtn-93QMcj4o6erwCabc6wyrLSWM0gJ18GoDUb-C-qSt30QceejYqAyuP0g_2u63pD7nJjIdBsg3oTxRlQ4OIj5eWPu67gI5a7uY01rfyjmq8sPZ8tlovKqHmu4jMetyQ5FMC8_Xbpcvs5HUNP84z3Bs90pbFtTA39uAO9Zl-SnVHyGJciS3C_tzvIVUaeZoUEwlHPMIb6sJtKAWU29yXNfWrXqEEBYt-6yliNP2aSx3TvvMEDeFmpqJywCvVsJUR5M" />
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                        <img alt="Whiskers before her prosthetic" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-t4vN_5b6Z1_Xz3u8Q_b8y9w2z3g_5y3y2x_x3_g8y_x2z_x3_g8y_x2z_x3_g8y_x2z_x3_g8y_x2z/c"
+                            style="aspect-ratio: 1/1;" />
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-center mb-10">Recovery Timeline</h2>
+                    <div class="grid">
+                        <div class="timeline-item flex items-start gap-6">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="rounded-full bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark p-1">
+                                    <img class="size-8 rounded-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUJ-TQTlzsaB5kapMEZhoTQ9rgfp9V9d_fiKVf2fhuVd8JPB_MkOFpl20T9556_NToespUjR13dRv-dFTHV0Aflvpx7rB8luLfjw2SpU_iJFQmzcQ-RTP18Qd-LVUoK7wXpvgQcxtqEXpZWhaIhfQay-GXDHH3DWqQxpqgy7Kk6sl57JW10ULodcaZalYZOw-aCnXbQPYNkTuOuuLyG07sI7gQOJe2i-FnWNe9_Dq4jAdUBGELzHpwaCGlQ4edo-uvdeDH23zp0Hw" />
+                                </div>
+                                <div class="timeline-connector w-0.5 grow bg-border-light dark:bg-border-dark my-2">
+                                </div>
+                            </div>
+                            <div class="pb-12">
+                                <h3 class="text-lg font-bold">Rescue &amp; Initial Assessment</h3>
+                                <p class="text-text-light/80 dark:text-text-dark/80">Whiskers is found injured and
+                                    brought to a local shelter.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item flex items-start gap-6">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="rounded-full bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark p-1">
+                                    <img class="size-8 rounded-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFkhQpbvScM8guhskSaJ-XW_egjy29W2nhgE46QR13aqo0JxQHHP7q3-znNLo2Jj_66gU8B9J1AoLvBFVghXqPnTFDakJeYIO2_Yj-X_yMr_KjGFOVc_ovbKLQ4CHfBXmNmHeJ49xfvSUCAP9iTkaL1AID1TFa42Cgq3RFUv1Qs3WRfWtKfmnHsnxnOUKXzAFeScRkfERH-2Qi9LY5GGBRrVvJHnurKK4HuMK_egqVgAlYwVANh2gtr1UzDcOEdoYRHW_46vZtUpc" />
+                                </div>
+                                <div class="timeline-connector w-0.5 grow bg-border-light dark:bg-border-dark my-2">
+                                </div>
+                            </div>
+                            <div class="pb-12">
+                                <h3 class="text-lg font-bold">Custom Prosthetic Design</h3>
+                                <p class="text-text-light/80 dark:text-text-dark/80">Our team designs a prosthetic
+                                    tailored to Whiskers' needs.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item flex items-start gap-6">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="rounded-full bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark p-1">
+                                    <img class="size-8 rounded-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIX2jzgVnxwdx1WAxiJ025IaHp-38xE9YTPVWUHAyBZr-dXM4Cx-wOABbDtdGGda5eEYTykKzGN2iFlk5Uo0wwsRY8zCJp2enRn1sEML746XYIN1mTKK-oFU3sLyLbjpeGgyfKjtsBI-GMCIt6qtmRmZpin90CwscV5lVdLTGaoHv2qXQ6EUV0Hz1sMR-zjAC6aN1cD6_ZQ5NuJXAGuHoLlBKZgOKDu9qGX6r3Tp776pcBcBadAL-24d7KSlACZ7l7jQ75mh0yNlE" />
+                                </div>
+                                <div class="timeline-connector w-0.5 grow bg-border-light dark:bg-border-dark my-2">
+                                </div>
+                            </div>
+                            <div class="pb-12">
+                                <h3 class="text-lg font-bold">Fitting &amp; Rehabilitation</h3>
+                                <p class="text-text-light/80 dark:text-text-dark/80">Whiskers adapts to her new limb
+                                    with expert guidance.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item flex items-start gap-6">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="rounded-full bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark p-1">
+                                    <img class="size-8 rounded-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAai91N35NDzkmYXLUwHaXo4KQisJ5VRkbEglPKSl9K4Mr0MnHddt-U1QTT5gc0v3ibzxVIPDIoa6Jje-XpM4WVVLyeoMCLZNTWzHF00LZQvVp7g2Mi4wLMlzgD8DjBjE5aeFsTdSlAdgVUQFwRYLQ9owZmjcJnlKkb0MB4Ct4ZLUYExdX1h_Gs8NydlMj8kTrxRtjKNmWU0bWswSSgufIcZQnWoblZd3yvRj0ZG22sNoaSxaiiR6xwVTPL669y_tQ8jNT1-t58VMs" />
+                                </div>
+                            </div>
+                            <div class="pb-12">
+                                <h3 class="text-lg font-bold">Life with New Mobility</h3>
+                                <p class="text-text-light/80 dark:text-text-dark/80">Whiskers enjoys a more active and
+                                    comfortable life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark rounded-xl p-8 md:p-12 border border-border-light dark:border-border-dark text-center">
+                    <h2 class="text-2xl font-bold mb-4">A Word from Whiskers' Rescuer</h2>
+                    <blockquote class="max-w-2xl mx-auto">
+                        <p class="text-lg italic text-text-light/90 dark:text-text-dark/90">"When I found Whiskers, I
+                            knew she deserved a chance at a full life. Pawthos didn't just give her a prosthetic; they
+                            gave her a new beginning. Seeing her run and play again is the most rewarding feeling."</p>
+                    </blockquote>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-8">Our Impact</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div
+                            class="flex flex-col gap-2 rounded-lg p-6 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+                            <p class="text-base font-medium text-text-light/80 dark:text-text-dark/80">Animals Helped
+                            </p>
+                            <p class="text-4xl font-extrabold text-primary">250+</p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 rounded-lg p-6 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+                            <p class="text-base font-medium text-text-light/80 dark:text-text-dark/80">Prosthetics
+                                Donated</p>
+                            <p class="text-4xl font-extrabold text-primary">300+</p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 rounded-lg p-6 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+                            <p class="text-base font-medium text-text-light/80 dark:text-text-dark/80">Success Rate</p>
+                            <p class="text-4xl font-extrabold text-primary">95%</p>
+                        </div>
+                    </div>
+                    <button
+                        class="mt-10 px-6 py-3 text-lg font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors">Donate
+                        to Help More Animals</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
