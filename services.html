@@ -64,10 +64,16 @@
 
 <body class="bg-background dark:bg-background-light font-display text-text">
     <div class="bg-background-light dark:bg-background-light">
-        <header class="fixed top-0 left-0 right-0 z-50 h-20 bg-background dark:bg-background shadow-subtle">
-            <div class="container mx-auto px-10 flex items-center justify-between h-full">
-                <a class="text-text-dark dark:text-text-dark text-2xl font-semibold" href="#">Pawthos</a>
-                <nav class="hidden md:flex items-center gap-6">
+       <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-slate-200 px-10 py-4 sticky top-0 bg-slate-50/80 backdrop-blur-lg z-20">
+                <div class="flex items-center gap-3 text-slate-800">
+                    <span class="material-symbols-outlined text-3xl text-[#4496e9]">pets</span>
+                    <h2 class="text-slate-900 text-xl font-bold tracking-tight">
+                        Pawthos
+                    </h2>
+                </div>
+                <div class="flex items-center gap-8">
+                    <nav class="hidden md:flex items-center gap-6">
                         <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
                             href="index.html">Home</a>
                         <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
@@ -79,10 +85,12 @@
                         <a class="text-slate-700 text-sm font-medium hover:text-[#4496e9] transition-colors"
                             href="contact.html">Contact</a>
                     </nav>
-                <a class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                    href="#">Get Help Now</a>
-            </div>
-        </header>
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#4496e9] text-slate-50 text-sm font-bold shadow-sm hover:bg-[#3b82f6] transition-all duration-300">
+                        <span class="truncate">Get Help Now</span>
+                    </button>
+                </div>
+            </header>
         <main class="pt-20">
             <section
                 class="bg-gradient-to-b from-background to-background-light dark:from-background dark:to-background-light py-30">
