@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pawthos - Get Help Now</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec7f13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .group.success .group-initial {
+            display: none;
+        }
+        .group.success .group-success {
+            display: flex;
+        }
+        .group .group-success {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="fixed inset-0 bg-background-dark/50 flex items-center justify-center p-4 z-50">
+<div class="group relative bg-background-light dark:bg-background-dark rounded-xl shadow-2xl w-full max-w-md mx-auto transition-all duration-300 ease-in-out transform scale-95 opacity-0 animate-fade-in-scale" id="consultation-modal">
+<div class="group-initial flex flex-col">
+<div class="p-8 text-center space-y-2">
+<h2 class="text-2xl font-bold text-background-dark dark:text-background-light">Book a Free Consultation</h2>
+<p class="text-background-dark/70 dark:text-background-light/70">Fill out the form below to schedule a consultation with one of our specialists.</p>
+</div>
+<button class="absolute top-4 right-4 text-background-dark/50 dark:text-background-light/50 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<form class="px-8 pb-8 space-y-4">
+<div>
+<label class="sr-only" for="name">Your Name</label>
+<input class="w-full bg-background-dark/5 dark:bg-background-light/5 border-2 border-transparent focus:border-primary focus:ring-0 rounded-lg px-4 py-3 text-background-dark dark:text-background-light placeholder-background-dark/40 dark:placeholder-background-light/40 transition-colors" id="name" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="email">Your Email</label>
+<input class="w-full bg-background-dark/5 dark:bg-background-light/5 border-2 border-transparent focus:border-primary focus:ring-0 rounded-lg px-4 py-3 text-background-dark dark:text-background-light placeholder-background-dark/40 dark:placeholder-background-light/40 transition-colors" id="email" placeholder="Your Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="phone">Your Phone Number</label>
+<input class="w-full bg-background-dark/5 dark:bg-background-light/5 border-2 border-transparent focus:border-primary focus:ring-0 rounded-lg px-4 py-3 text-background-dark dark:text-background-light placeholder-background-dark/40 dark:placeholder-background-light/40 transition-colors" id="phone" placeholder="Your Phone Number" type="tel"/>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary/30 transition-all duration-300" onclick="document.getElementById('consultation-modal').classList.add('success')" type="button">
+                        Submit Request
+                    </button>
+</form>
+</div>
+<div class="group-success flex-col items-center justify-center p-8 text-center space-y-6">
+<div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-background-dark dark:text-background-light">Success!</h2>
+<p class="text-background-dark/70 dark:text-background-light/70 mt-2">Your consultation request has been sent. We'll be in touch with you shortly!</p>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary/30 transition-all duration-300">
+                    Close
+                </button>
+</div>
+</div>
+</div>
+<style>
+        @keyframes fade-in-scale {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .animate-fade-in-scale {
+            animation: fade-in-scale 0.3s ease-out forwards;
+        }
+    </style>
+
+</body></html>
